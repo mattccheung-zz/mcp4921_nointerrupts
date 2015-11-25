@@ -1,15 +1,14 @@
 /*
- * MCP4921_ramp_from_Hsync_Vsync_interrupts.c
+ * MCP4921_ramp_no_interrupt.c
  *
  * Created: 30/11/2014 1:06:17 PM
- *  Author: LC
+ *  Author: CY
  */ 
 
 
 #define F_CPU 16000000UL	//16MHz CPU clock
 #include <avr/io.h>
 #include <avr/interrupt.h>
-//#include <util/delay.h>
 
 void SPI_MasterInit(void);
 void SPI_MasterTransmit(char cData);
